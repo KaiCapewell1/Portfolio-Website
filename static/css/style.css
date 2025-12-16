@@ -1,0 +1,124 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #00001A;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent !important;
+    padding: 20px 50px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: #D0D4FF !important;
+    margin-right: 18px;
+    font-weight: 400;
+    transition: 0.25s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #82D4FF !important;
+}
+
+/* Intro Layout */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 120px 90px;
+    gap: 40px;
+}
+
+/* Text Panel */
+.text {
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+/* Headings */
+.text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #82D4FF; /* modern accent */
+}
+
+.text h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #B5C1FF;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #E2E6FF;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+/* Hexagon Background */
+.hexagon {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+
+    background: linear-gradient(
+        135deg, 
+        #82D4FF 0%, 
+        #3C96E0 50%, 
+        #1A5A90 100%
+    );
+
+    box-shadow: 
+        0 0 25px rgba(116, 196, 250, 0.55),
+        0 0 50px rgba(116, 196, 250, 0.35);
+
+    clip-path: polygon(
+        25% 6.7%, 75% 6.7%, 
+        100% 50%, 75% 93.3%, 
+        25% 93.3%, 0% 50%
+    );
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Profile Image */
+.image {
+    width: 500px;
+    clip-path: polygon(
+        25% 6.7%, 75% 6.7%, 
+        100% 50%, 75% 93.3%, 
+        25% 93.3%, 0% 50%
+    );
+    display: block;
+    transform: translateY(8.8%);
+}
